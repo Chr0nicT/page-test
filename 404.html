@@ -1,1 +1,4 @@
-test
+<script>
+  var p = location.pathname.replace("/page-test/en/latest", "/page-test");
+  location.replace(p + location.search || "/page-test/");
+</script>
