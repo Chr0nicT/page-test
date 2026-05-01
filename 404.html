@@ -1,4 +1,4 @@
 <script>
-  var p = location.pathname.replace("/page-test/en/latest", "/page-test");
-  location.replace(p + location.search || "/page-test/");
+  if (location.pathname.includes("/en/latest"))
+    location.replace(location.pathname.replace("/en/latest", "") + location.search || "/page-test/");
 </script>
